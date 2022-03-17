@@ -15,16 +15,20 @@ public class Logintestclass extends Baseclass {
 
     String sheetName = "Sheet1";
     public LoginLocators locatorobj;
+
     @DataProvider
 
     public Object[][] getlogindataIcehrm() throws IOException, InvalidFormatException {
 
-    Object data[][] = Utilityclass.getTestData(sheetName);
-    return data;
-}
-@Test(dataProvider = "getlogindataIcehrm")
-public void loginIcehrm(String username, String password) throws InterruptedException {
-    locatorobj = new LoginLocators();
-    locatorobj.login(username,password);
-}
+        Object data[][] = Utilityclass.getTestData(sheetName);
+        return data;
+    }
+
+    @Test(dataProvider = "getlogindataIcehrm")
+    public void loginIcehrm(String username, String password) throws InterruptedException {
+        locatorobj = new LoginLocators();
+        locatorobj.login(username, password);
+    }
+
+
 }

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/mohitbisen/IdeaProjects/Icehrmassignment/src/test/java/TestClasspackage/Logintestclass.java">
+
+        <parameter name="browser" value= "chrome" />
+        <classes>
+            <class name="TestClasspackage.Logintestclass">
+                <methods>
+                    <include name="loginIcehrm"/>
+                </methods>
+            </class>
+            <class name="TestClasspackage.Logintestclass">
+                <methods>
+                    <include name="loginIcehrmfail"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

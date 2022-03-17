@@ -30,4 +30,5 @@ public class LoginLocators extends Baseclass {
         loginbtn.click();
 
     }
+
 }
